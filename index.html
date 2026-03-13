@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Travel Explorer helps you discover destinations, experiences, and personalized trip ideas."
+    />
+    <title>Travel Explorer | Plan Your Next Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="hero" id="top">
+      <nav class="nav container" aria-label="Primary navigation">
+        <h1 class="logo">Travel Explorer</h1>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#stats">Why us</a></li>
+          <li><a href="#plan">Plan</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero-content container">
+        <p class="eyebrow">Your next journey starts here</p>
+        <h2>Discover unforgettable places around the world.</h2>
+        <p>
+          Explore handpicked destinations, compare travel styles, and build a quick
+          itinerary in minutes.
+        </p>
+        <div class="hero-actions">
+          <a href="#destinations" class="btn">Explore destinations</a>
+          <a href="#plan" class="btn btn-outline">Plan a trip</a>
+        </div>
+      </section>
+    </header>
+
+    <main id="main-content">
+      <section id="destinations" class="section container">
+        <div class="section-heading">
+          <h3>Featured destinations</h3>
+          <p>Popular places for beach lovers, city explorers, and adventurers.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <span class="badge">Culture</span>
+            <h4>Kyoto, Japan</h4>
+            <p>Ancient temples, peaceful gardens, and world-famous cuisine.</p>
+          </article>
+          <article class="card">
+            <span class="badge">Island Escape</span>
+            <h4>Santorini, Greece</h4>
+            <p>Cliffside sunsets, whitewashed villages, and endless blue views.</p>
+          </article>
+          <article class="card">
+            <span class="badge">Adventure</span>
+            <h4>Banff, Canada</h4>
+            <p>Turquoise lakes, mountain trails, and cozy alpine towns.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experiences" class="section section-alt">
+        <div class="container grid two-col">
+          <div>
+            <h3>Travel experiences you'll love</h3>
+            <ul class="check-list">
+              <li>Guided city walking tours</li>
+              <li>Local food tastings</li>
+              <li>Nature and hiking adventures</li>
+              <li>Relaxing wellness escapes</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h4>Quick planning tips</h4>
+            <p>Use these simple tips to make your next trip easier and smoother.</p>
+            <p class="tip" id="tip-text">Tip of the day: Pack versatile outfits.</p>
+            <button id="new-tip" class="btn btn-secondary" type="button">
+              Show another tip
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats" class="section container">
+        <div class="section-heading">
+          <h3>Trusted by travelers worldwide</h3>
+          <p>Quick numbers that show why travelers choose Travel Explorer.</p>
+        </div>
+
+        <div class="grid stats-grid" aria-label="Travel Explorer highlights">
+          <article class="stat-card">
+            <p class="stat-value">120+</p>
+            <p class="stat-label">Destinations</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-value">45k</p>
+            <p class="stat-label">Trips planned</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-value">4.8/5</p>
+            <p class="stat-label">Average rating</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="plan" class="section container">
+        <div class="section-heading">
+          <h3>Start planning today</h3>
+          <p>
+            Share your travel style and ideal trip length, and we'll suggest a
+            destination type for you.
+          </p>
+        </div>
+
+        <form class="plan-form" id="plan-form">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Alex" required />
+
+          <label for="style">Preferred travel style</label>
+          <select id="style" name="style" required>
+            <option value="">Choose one</option>
+            <option value="Beach & Relaxation">Beach & Relaxation</option>
+            <option value="Culture & History">Culture & History</option>
+            <option value="Adventure & Nature">Adventure & Nature</option>
+          </select>
+
+          <label for="days">Trip length: <span id="day-count">7</span> days</label>
+          <input id="days" type="range" name="days" min="3" max="21" value="7" />
+
+          <button type="submit" class="btn">Get inspiration</button>
+        </form>
+
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Travel Explorer. Ready when you are.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
