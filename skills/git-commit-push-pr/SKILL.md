@@ -1,5 +1,5 @@
 ---
-name: codex-simple-app
+name: git-commit-push-pr
 description: Commit local changes, push the currently checked-out branch to its upstream (non-fork) remote, and create a pull request after explicit user confirmation. Use when asked to commit changes, push the current branch, or open a PR for the active branch.
 ---
 
